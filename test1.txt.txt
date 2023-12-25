@@ -1,18 +1,23 @@
 Шкряда Мария
 
-#include <iostream>
-#include <string>
-using namespace ::std;
+#include <iostream> //подключение потоковой библиотеки ввод-вывод
+#include <string> //подключение библиотеки для работы со строками
+using namespace ::std; //указание используемого пространства имен
 void main()
 {
+/*предусловие: ввод строки 
+  ппостусловие: заключает строку в кавычки и выводит полученную строку */
 	system("Chcp 1251");
+        //ввод строки
 	string st;
 	cin >> st;
 	cout << st << endl;
+        //заключение в кавычки
 	string s1 = "«";
 	string s2 = "»";
 	s1 += st;
 	s1 += s2;
 	st = s1;
+        //вывод массива
 	cout << st << endl;
 }
