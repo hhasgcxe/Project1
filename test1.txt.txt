@@ -1,1 +1,18 @@
 Шкряда Мария
+
+#include <iostream>
+#include <string>
+using namespace ::std;
+void main()
+{
+	system("Chcp 1251");
+	string st;
+	cin >> st;
+	cout << st << endl;
+	string s1 = "«";
+	string s2 = "»";
+	s1 += st;
+	s1 += s2;
+	st = s1;
+	cout << st << endl;
+}
